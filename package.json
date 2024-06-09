@@ -1,0 +1,11 @@
+{
+  "name": "fmdeploy",
+  "version": "1.0.0",
+  "description": "Module that deploys a filemaker webwidget to a filemaker pro file using both OData and the FileMaker Data API",
+  "main": "fmDeploy.js",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
