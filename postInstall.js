@@ -2,10 +2,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const packageJsonPath = path.join(process.cwd(), 'package.json');
+// Define the path to the main package.json file at the root of the project
+const packageJsonPath = path.join(__dirname, '..', '..', 'package.json');
 const packageJson = require(packageJsonPath);
 
-const relativePath = path.relative(process.cwd(), __dirname);
+const relativePath = path.relative(path.join(__dirname, '..', '..'), __dirname);
 const fmDeployPath = path.join(relativePath, 'fmDeploy.js');
 
 packageJson.scripts = packageJson.scripts || {};

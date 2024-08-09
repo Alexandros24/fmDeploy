@@ -6,7 +6,7 @@ FM Deploy is a npm module that deploys a FileMaker web widget to a FileMaker Pro
 
 To install the module, add it to your project using npm:
 
-```npm install fmdeploy```
+```npm i fm-webwidget-deploy```
 
 ## Usage
 After installation, the **build:deploy** script is added to your package.json file by the postInstall.js script. This script deploys the widget to the specified FileMaker server.
