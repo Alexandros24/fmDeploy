@@ -1,17 +1,19 @@
-# FM Deploy
+# FM Deploy [![NPM version](https://img.shields.io/npm/v/fmdeploy.svg?style=flat)](https://www.npmjs.com/package/fmdeploy)
 
 FM Deploy is a npm module that deploys a FileMaker web widget to a FileMaker Pro file using both OData and the FileMaker Data API.
 
 ## Installation
 
-To install the module, add it to your project using npm:
+Install with [npm](https://www.npmjs.com/):
 
-```npm i fm-webwidget-deploy```
+```sh
+$ npm install fmdeploy
+```
 
 ## Usage
 After installation, the **build:deploy** script is added to your package.json file by the postInstall.js script. This script deploys the widget to the specified FileMaker server.
 
-The parameters for the FileMaker server are stored in a parameters.json file in the same directory as the fmDeploy.js script. If this file exists, the script will use the parameters from the file. If not, it will prompt the user for the parameters.
+The parameters for the FileMaker server are stored in a parameters.json file in the home directory of the computer that runs. If this file exists, the script will use the parameters from the file. If not, it will prompt the user for the parameters.
 
 The parameters are:
 
@@ -21,9 +23,13 @@ The parameters are:
 * FileMaker Username
 * FileMaker Password
 
-To run the script, use the **build:deploy** npm script:
+To run the script, use the **fmdeploy:build** npm script:
 
-```npm run build:deploy```
+```sh
+$ npm run fmdeploy:build
+```
+
+
 
 
 ## Contributing
